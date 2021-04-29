@@ -1,0 +1,46 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	background-color: #fafafb;
+	width: 100%;
+	height: 100%;
+}
+ul li {
+	list-style: none;
+}
+/* Features wheel */
+.features {
+
+}
+.transform-battery {
+	transform: rotate(-90deg);
+}
+.featureImg {
+	width: 76px;
+	height: 70px;
+}
+.battery {
+	position: absolute;
+	left: 25%;
+	transform: rotate(-90deg);
+}
+.processor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.screen {
+	position: absolute;
+	top: 50%;
+	transform: rotate(-180deg);
+}
+.network {
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+	transform: rotate(90deg);
+}
+
+.phone-img {
+	width: 50%;
+}
