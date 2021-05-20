@@ -1,53 +1,106 @@
 html, body {
+	top: 0;
+	left: 0;
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 1;
 }
 ul li {
 	list-style: none;
 }
+button {
+	border: none;
+	background-color: transparent;s
+}
 .section {
 	background-image: linear-gradient(45deg, #0052D4, #65C7F7, #9CECFB);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
 	z-index: 2;
 }
 /* Features wheel */
+.wheel {
+	position: absolute;
+	border-radius: 50%;
+	width: 1000px;
+	height: 1000px;
+	transform: rotate(0deg);
+	transition: .4s ease all;
+}
+.icon {
+	width: 30px;
+	cursor: pointer;
+}
+.icon-rot {
+	width: 30px;
+	transform: rotate(180deg);
+	cursor: pointer;
+}
 .features {
-
+	position: relative;
+}
+.detailTitle, .detailDetails {
+	color: #fff;
 }
 .transform-battery {
+	position: absolute;
 	transform: rotate(-90deg);
 }
 .featureImg {
+	position: relative;
 	width: 76px;
 	height: 70px;
 }
 .battery {
 	position: absolute;
-	left: 25%;
+	top: 10rem;
+	left: 22rem;
 	transform: rotate(-90deg);
 }
 .processor {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 28rem;
+	left: 40rem;
 }
 .screen {
 	position: absolute;
-	top: 50%;
-	transform: rotate(-180deg);
+	top: 28rem;
+	transform: rotate(180deg);
 }
 .network {
 	position: absolute;
-	bottom: 0;
-	left: 25%;
+	top: 48rem;
+	left: 22rem;
+	transform: translate(25rem,48rem);
 	transform: rotate(90deg);
 }
 .sam-phone {
 	position: absolute;
-	top: 10rem;
-	left: 26rem;
+	top: 16rem;
+	left: 20rem;
 }
 .sam-phone .phone-img {
-	width: 40%;
+	width: 30%;
+}
+.controls {
+	text-align: center;
+	position: absolute;
+	transform: translate(28rem,28rem);
+}
+.overlay {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 500px solid #fff;
+	border-right: 500px solid transparent;
+	border-bottom: 500px solid #fff;
+	border-left: 500px solid #fff;
+	z-index: 0;
 }
