@@ -14,10 +14,18 @@ button {
 	border: none;
 	background-color: transparent;s
 }
-.section {
+.nav-item {
+	padding: 5px 0 0 12px;
+}
+.nav-item .nav-link {
+	color: #282828;
+}
+.gradient-bg {
 	background-image: linear-gradient(45deg, #0052D4, #65C7F7, #9CECFB);
 	background-size: cover;
 	background-position: center;
+}
+.section {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -50,6 +58,9 @@ button {
 .transform-battery {
 	position: absolute;
 	transform: rotate(-90deg);
+}
+.featuresName {
+	color: #fff;
 }
 .featureImg {
 	position: relative;
